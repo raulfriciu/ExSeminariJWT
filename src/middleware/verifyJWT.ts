@@ -16,7 +16,7 @@ export const TokenValidation = (req: Request, res: Response, next: NextFunction)
     const token = req.header('auth-token');
     console.log('Token:', token); // Imprime el token en la consola
     // Comprobamos 
-    if (!token) return handleHttp(res, 'Access denied', 'No token provided');
+    if (!token) return handleHttp(res, 'Access denied', 'No token provided'); kj
 
     try {
         // Obtenemos de nuevo las datos codificadas del token
